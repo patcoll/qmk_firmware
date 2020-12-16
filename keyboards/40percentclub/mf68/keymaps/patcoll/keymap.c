@@ -47,7 +47,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_LCTL, KC_LGUI, KC_LALT,                            KC_SPC,                             KC_RALT, MO(1),   MO(2),            KC_LEFT, KC_DOWN, KC_RGHT
   ),
   [1] = LAYOUT_68_ansi(
-    KC_ESC,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_VOLD, KC_VOLU, KC_MPLY,          _______, KC_VOLU,
+    RESET,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_VOLD, KC_VOLU, KC_MPLY,          _______, KC_VOLU,
     _______, _______, KC_UP,   _______, _______, _______, KC_HOME, KC_PGDN, KC_PGUP, KC_END,  KC_END,  BR_BACK, BR_FWD,  KC_PSCR,          _______, KC_VOLD,
     _______, KC_LEFT, KC_DOWN, KC_RGHT, _______, _______, KC_LEFT, KC_DOWN, KC_UP  , KC_RGHT, _______, _______,          _______,
     _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,                   _______,          KC_MUTE,
@@ -57,8 +57,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______, KC_ACL0, KC_ACL1, KC_ACL2, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,          _______, _______,
     _______, _______, KC_MS_U, _______, _______, _______, KC_WH_L, KC_WH_D, KC_WH_U, KC_WH_R, _______, _______, _______, _______,          _______, _______,
     _______, KC_MS_L, KC_MS_D, KC_MS_R, _______, _______, KC_MS_L, KC_MS_D, KC_MS_U, KC_MS_R, _______, _______,          _______,
-    _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,                   _______,          _______,
-    _______, _______, _______,                            KC_BTN1,                            _______, _______, _______,          _______, _______, _______
+    _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,                   KC_BTN1,          KC_MS_U,
+    _______, _______, _______,                            KC_BTN1,                            _______, _______, KC_BTN1,          KC_MS_L, KC_MS_D, KC_MS_R
   )
 };
 
