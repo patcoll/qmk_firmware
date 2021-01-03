@@ -1,7 +1,7 @@
 #pragma once
 
 // How long before a tap becomes a hold, if set above 500, a key tapped during the tapping term will turn it into a hold too
-#define TAPPING_TERM 187
+#define TAPPING_TERM 175
 
 #define TAPPING_TERM_PER_KEY
 
