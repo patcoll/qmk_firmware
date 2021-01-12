@@ -26,11 +26,31 @@ uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
         case LSFT_T(KC_N):
             return TAPPING_TERM + 75;
         case LSFT_T(KC_G):
-            return TAPPING_TERM - 22;
+            return TAPPING_TERM - 15;
         case LSFT_T(KC_H):
-            return TAPPING_TERM - 22;
+            return TAPPING_TERM - 10;
+
+        /* case LALT_T(KC_D): */
+        /*     return TAPPING_TERM + 20; */
+
+        /* case LT(MEDR, KC_ESC): */
+        /*     return TAPPING_TERM - 20; */
+        /* case LT(NSSL, KC_ENT): */
+        /* case LT(NSL, KC_BSPC): */
+        /*     return TAPPING_TERM - 50; */
+        /* case LT(MOUR, KC_TAB): */
+        /*     return TAPPING_TERM - 20; */
+
+
+
+
+        case LT(NAVR, KC_SPC):
         case LT(MEDR, KC_ESC):
+            return TAPPING_TERM + 45;
+
         case LT(NSSL, KC_ENT):
+            return TAPPING_TERM - 7;
+
         case LT(NSL, KC_BSPC):
             return TAPPING_TERM - 15;
         case LT(MOUR, KC_TAB):
