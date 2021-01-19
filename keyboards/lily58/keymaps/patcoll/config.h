@@ -34,8 +34,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 // #define TAPPING_FORCE_HOLD
 // #define TAPPING_TERM 153 // Tangerine?
-#define TAPPING_TERM 158 // Holy Panda
-// #define TAPPING_TERM 165 // NK_ Blueberry tax (+7ms)
+// #define TAPPING_TERM 158 // Holy Panda
+#define TAPPING_TERM 165 // NK_ Blueberry tax (+7ms)
 #define TAPPING_TERM_PER_KEY
 #define PERMISSIVE_HOLD
 #define BILATERAL_COMBINATIONS

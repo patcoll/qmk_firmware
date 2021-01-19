@@ -14,7 +14,8 @@ extern uint8_t is_master;
 #define X_NA KC_NO // present but not available for use
 #define X_NU KC_NO // available but not used
 
-enum layers { BASE, MBO, MEDR, NAVR, MOUR, NSSL, NSL, FUNL };
+/* enum layers { BASE, MBO, MEDR, NAVR, MOUR, NSSL, NSL, FUNL }; */
+enum layers { BASE, MEDR, NAVR, MOUR, NSSL, NSL, FUNL };
 
 uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
@@ -28,19 +29,19 @@ uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
             return TAPPING_TERM + 60;
 
         case LSFT_T(KC_G):
-            return TAPPING_TERM - 22;
+            return TAPPING_TERM - 40;
         case LSFT_T(KC_H):
-            return TAPPING_TERM - 4;
+            return TAPPING_TERM - 3;
 
         case LT(NAVR, KC_SPC):
         case LT(MEDR, KC_ESC):
             return TAPPING_TERM + 45;
 
-        case LT(NSSL, KC_ENT):
-            return TAPPING_TERM - 7;
-
+        /* case LT(NSSL, KC_ENT): */
+        /*     return TAPPING_TERM - 7; */
+        /*  */
         /* case LT(NSL, KC_BSPC): */
-            /* return TAPPING_TERM + 10; */
+        /*     return TAPPING_TERM + 10; */
 
         default:
             return TAPPING_TERM;
@@ -81,13 +82,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                         X_NU,             X_NA,             X_NA,             X_NA,             KC_MSTP,          KC_MPLY,          KC_MUTE,          X_NU
 ),
 
-[MBO] = LAYOUT(
-  _______,          _______,          _______,          _______,          _______,          _______,                                              _______,          _______,          _______,          _______,          _______,          _______,
-  _______,          _______,          _______,          _______,          _______,          _______,                                              _______,          _______,          _______,          _______,          _______,          _______,
-  _______,          _______,          _______,          _______,          _______,          _______,                                              _______,          _______,          _______,          _______,          _______,          _______,
-  _______,          _______,          _______,          _______,          _______,          _______,          _______,          _______,          _______,          _______,          _______,          _______,          _______,          _______,
-                                                        _______,          _______,          _______,          _______,          KC_BTN1,          KC_BTN3,          KC_BTN2,          _______
-),
+/* [MBO] = LAYOUT( */
+/*   _______,          _______,          _______,          _______,          _______,          _______,                                              _______,          _______,          _______,          _______,          _______,          _______, */
+/*   _______,          _______,          _______,          _______,          _______,          _______,                                              _______,          _______,          _______,          _______,          _______,          _______, */
+/*   _______,          _______,          _______,          _______,          _______,          _______,                                              _______,          _______,          _______,          _______,          _______,          _______, */
+/*   _______,          _______,          _______,          _______,          _______,          _______,          _______,          _______,          _______,          _______,          _______,          _______,          _______,          _______, */
+/*                                                         _______,          _______,          _______,          _______,          KC_BTN1,          KC_BTN3,          KC_BTN2,          _______ */
+/* ), */
 
 [FUNL] = LAYOUT(
   RESET,            _______,          _______,          _______,          _______,          _______,                                              _______,          _______,          _______,          _______,          _______,          RESET,
