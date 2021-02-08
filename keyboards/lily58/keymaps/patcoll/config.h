@@ -33,9 +33,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define USE_SERIAL_PD2
 
 // #define TAPPING_FORCE_HOLD
-// #define TAPPING_TERM 153 // Tangerine?
+#define TAPPING_TERM 153 // Tangerine?
 // #define TAPPING_TERM 158 // Holy Panda
-#define TAPPING_TERM 165 // NK_ Blueberry tax (+7ms)
+// #define TAPPING_TERM 165 // NK_ Blueberry tax (+7ms)
+// #define TAPPING_TERM 170
 #define TAPPING_TERM_PER_KEY
 #define PERMISSIVE_HOLD
 #define BILATERAL_COMBINATIONS
@@ -54,7 +55,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #undef MOUSEKEY_WHEEL_DELAY
 #define MOUSEKEY_WHEEL_DELAY    0
 #undef MOUSEKEY_MAX_SPEED
-#define MOUSEKEY_MAX_SPEED      5
+#define MOUSEKEY_MAX_SPEED      6
 #undef MOUSEKEY_TIME_TO_MAX
 #define MOUSEKEY_TIME_TO_MAX    64
 
