@@ -20,18 +20,18 @@ enum layers { BASE, MEDR, NAVR, MOUR, NSSL, NSL, FUNL };
 uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
         case LGUI_T(KC_A):
-            return TAPPING_TERM + 65;
+            return TAPPING_TERM + 55;
         case LGUI_T(KC_S):
         case LGUI_T(KC_L):
         case LGUI_T(KC_SCLN):
-        /* case LSFT_T(KC_B): */
+        case LSFT_T(KC_B):
         case LSFT_T(KC_N):
             return TAPPING_TERM + 60;
 
         case LSFT_T(KC_G):
             return TAPPING_TERM - 40;
         case LSFT_T(KC_H):
-            return TAPPING_TERM - 3;
+            return TAPPING_TERM - 30;
 
         case LT(NAVR, KC_SPC):
         case LT(MOUR, KC_SPC):
