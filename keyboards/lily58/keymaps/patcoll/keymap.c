@@ -19,19 +19,21 @@ enum layers { BASE, MEDR, NAVR, MOUR, NSSL, NSL, FUNL };
 
 uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
-        case LGUI_T(KC_A):
-            return TAPPING_TERM + 55;
-        case LGUI_T(KC_S):
-        case LGUI_T(KC_L):
-        case LGUI_T(KC_SCLN):
-        case LSFT_T(KC_B):
-        case LSFT_T(KC_N):
-            return TAPPING_TERM + 60;
+        /* case LGUI_T(KC_A): */
+        /*     return TAPPING_TERM + 30; */
+        /* case LGUI_T(KC_S): */
+        /* case LGUI_T(KC_L): */
+        /* case LGUI_T(KC_SCLN): */
+        /* case LSFT_T(KC_B): */
+        /* case LSFT_T(KC_N): */
+        /*     return TAPPING_TERM + 30; */
 
         case LSFT_T(KC_G):
-            return TAPPING_TERM - 30;
+            return TAPPING_TERM - 35;
         case LSFT_T(KC_H):
             return TAPPING_TERM - 20;
+        case LSFT_T(KC_ENT):
+            return TAPPING_TERM - 25;
 
         case LT(NAVR, KC_SPC):
         case LT(MOUR, KC_SPC):
@@ -55,8 +57,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_GRV,           KC_1,             KC_2,             KC_3,             KC_4,             KC_5,                                                 KC_6,             KC_7,             KC_8,             KC_9,             KC_0,             KC_BSPC,
   KC_TAB,           KC_Q,             KC_W,             KC_E,             KC_R,             KC_T,                                                 KC_Y,             KC_U,             KC_I,             KC_O,             KC_P,             KC_BSPC,
   LCTL_T(KC_ESC),   LGUI_T(KC_A),     LGUI_T(KC_S),     LALT_T(KC_D),     LCTL_T(KC_F),     LSFT_T(KC_G),                                         LSFT_T(KC_H),     LCTL_T(KC_J),     LALT_T(KC_K),     LGUI_T(KC_L),     LGUI_T(KC_SCLN),  KC_QUOT,
-  KC_LSFT,          KC_Z,             KC_X,             KC_C,             KC_V,             LSFT_T(KC_B),     KC_LBRC,          KC_RBRC,          LSFT_T(KC_N),     KC_M,             KC_COMM,          KC_DOT,           KC_SLSH,          RSFT_T(KC_ENT),
-                                                        X_NU,             LT(MEDR, KC_ESC), LT(NAVR, KC_SPC), LT(MOUR, KC_SPC), LT(NSSL, KC_ENT), LT(NSL, KC_BSPC), LT(FUNL, KC_DEL), X_NU
+  KC_LSFT,          KC_Z,             KC_X,             KC_C,             KC_V,             LSFT_T(KC_B),     KC_LBRC,          KC_RBRC,          LSFT_T(KC_N),     KC_M,             KC_COMM,          KC_DOT,           KC_SLSH,          LSFT_T(KC_ENT),
+                                                        X_NU,             LT(MEDR, KC_ESC), LT(NAVR, KC_SPC), LT(MOUR, KC_TAB), LT(NSSL, KC_ENT), LT(NSL, KC_BSPC), LT(FUNL, KC_DEL), X_NU
 ),
 
 [NAVR] = LAYOUT(
