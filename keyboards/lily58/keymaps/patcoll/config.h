@@ -36,7 +36,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // #define TAPPING_TERM 158 // Holy Panda
 // #define TAPPING_TERM 165 // NK_ Blueberry tax (+7ms)
 
-#define TAPPING_TERM 165
+#define TAPPING_TERM 160
 
 #define TAPPING_TERM_PER_KEY
 
