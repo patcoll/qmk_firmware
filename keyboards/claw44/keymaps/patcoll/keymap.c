@@ -103,12 +103,12 @@ uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
 
         case LSFT_T(KC_F):
         case LSFT_T(KC_G):
-            return 135;
+            return 145;
         case LSFT_T(KC_H):
         case LSFT_T(KC_J):
-            return 135;
+            return 145;
         case LSFT_T(KC_ENT):
-            return 135;
+            return 145;
 
         /* case LT(NAVR, KC_SPC): */
         /* case LT(MOUR, KC_SPC): */
@@ -167,14 +167,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_TAB,           KC_Q,             KC_W,             KC_E,             KC_R,             KC_T,                                                 KC_Y,             KC_U,             KC_I,             KC_O,             KC_P,             KC_BSPC,
   LCTL_T(KC_ESC),   LGUI_T(KC_A),     LGUI_T(KC_S),     LALT_T(KC_D),     LCTL_T(KC_F),     LSFT_T(KC_G),                                         LSFT_T(KC_H),     LCTL_T(KC_J),     LALT_T(KC_K),     LGUI_T(KC_L),     LGUI_T(KC_SCLN),  KC_QUOT,
   KC_LSFT,          KC_Z,             KC_X,             KC_C,             KC_V,             KC_B,                                         KC_N,     KC_M,             KC_COMM,          KC_DOT,           KC_SLSH,          LSFT_T(KC_ENT),
-                                                        X_NU,             LT(MEDR, KC_ESC), LT(NAVR, KC_SPC), LT(MOUR, KC_SPC), LT(NSSL, KC_ENT), LT(NSL, KC_BSPC), LT(FUNL, KC_DEL), X_NU
+                                                        X_NU,             LT(MEDR, KC_ESC), LT(NAVR, KC_SPC), LT(MOUR, KC_SPC), LT(NSSL, KC_ENT), LT(NSL, KC_ENT), LT(FUNL, KC_BSPC), KC_DEL
 ),
 
 [NAVR] = LAYOUT(
   _______,          RESET,            X_NA,             X_NA,             X_NA,             X_NA,                                                 KC_AGIN,          KC_UNDO,          KC_CUT,           KC_COPY,          KC_PSTE,          _______,
   _______,          KC_LGUI,          KC_LGUI,          KC_LALT,          KC_LCTL,          KC_LSFT,                                              KC_LEFT,          KC_DOWN,          KC_UP,            KC_RGHT,          KC_CAPS,          _______,
   _______,          X_NA,             X_NA,             X_NA,             X_NA,             X_NA,                                                 KC_HOME,          KC_PGDN,          KC_PGUP,          KC_END,           KC_INS,           _______,
-                                                        X_NU,             X_NA,             X_NA,             X_NA,             KC_ENT,           KC_BSPC,          KC_DEL,           X_NU
+                                                        X_NU,             X_NA,             X_NA,             X_NA,             KC_ENT,           KC_ENT,           KC_BSPC,          KC_DEL
 ),
 
 [MOUR] = LAYOUT(
