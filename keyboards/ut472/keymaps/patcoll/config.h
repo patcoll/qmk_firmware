@@ -4,7 +4,7 @@
 
 // place overrides here
 
-#define TAPPING_TERM 170
+#define TAPPING_TERM 175
 
 // Mouse key speed and acceleration.
 #undef MOUSEKEY_DELAY
